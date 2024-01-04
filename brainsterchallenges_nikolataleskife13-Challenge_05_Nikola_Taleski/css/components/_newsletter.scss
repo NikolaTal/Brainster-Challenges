@@ -1,0 +1,121 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+@use "sass:math";
+
+.newsletter {
+  @extend %section;
+  text-align: center;
+  background-color: var.$newsletter-section-bg-color;
+
+  .wrapper {
+    @extend %images;
+    h3 {
+      font-size: var.$gutter-base * 0.7;
+      padding-bottom: var.$gutter-base;
+      @include mix.tablet-styles {
+        font-size: var.$gutter-base;
+      }
+      @include mix.mobile-l-styles {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+    p {
+      width: 40%;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: math.div(var.$gutter-base, 3);
+
+      @include mix.tablet-styles {
+        width: 70%;
+        font-size: math.div(var.$gutter-base, 2);
+      }
+    }
+    hr {
+      width: 8%;
+      border: 1.5px solid var.$button-hr-color;
+      margin: 20px auto 40px;
+
+      @include mix.tablet-styles {
+        width: 15%;
+      }
+    }
+    .inner {
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+      padding-bottom: 140px;
+
+      @include mix.tablet-styles {
+        flex-direction: column;
+      }
+
+      .col {
+        flex-basis: 33.333%;
+
+        .fa-solid {
+          color: var.$button-hr-color;
+        }
+        h5 {
+          margin-top: math.div(var.$gutter-base, 3);
+          margin-bottom: math.div(var.$gutter-base, 2);
+        }
+        p {
+          width: 90%;
+
+          @include mix.tablet-styles {
+            width: 50%;
+            padding-bottom: var.$gutter-base;
+          }
+        }
+      }
+    }
+    .contact {
+      form {
+        width: 32%;
+        @include mix.flex-row;
+        margin-left: auto;
+        margin-right: auto;
+
+        @include mix.tablet-styles {
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+        }
+
+        input {
+          padding: 8px 150px;
+          margin-right: 3px;
+          padding-left: 10px;
+
+          @include mix.tablet-styles {
+            margin-bottom: 10px;
+            padding: 20px 40px;
+            width: 65%;
+          }
+        }
+        button {
+          padding: 8px 25px;
+          color: var.$text-color-primary;
+          background-color: var.$button-hr-color;
+          border: none;
+          border-radius: 3px;
+          text-transform: uppercase;
+          font-weight: bold;
+          font-size: 10px;
+          cursor: pointer;
+
+          @include mix.tablet-styles {
+            padding: 20px 40px;
+            font-size: var.$gutter-base * 0.5;
+          }
+          @include mix.mobile-l-styles {
+            width: 50%;
+            font-size: var.$gutter-base * 0.7;
+          }
+        }
+      }
+    }
+  }
+}

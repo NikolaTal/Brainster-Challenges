@@ -1,0 +1,118 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+@use "sass:math";
+
+.banner {
+  position: relative;
+  height: 100vh;
+  @extend %section;
+
+  .wrapper {
+    @extend %wrap;
+
+    @include mix.tablet-styles {
+      width: 90%;
+    }
+
+    nav {
+      @include mix.flex-row;
+
+      @include mix.mobile-l-styles {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+      }
+
+      .logo {
+        @include mix.ul-list;
+
+        @include mix.mobile-l-styles {
+          font-size: var.$gutter-base * 1;
+        }
+      }
+      .logo:hover {
+        color: var.$text-color-primary;
+        opacity: 1;
+      }
+      ul {
+        @include mix.flex-row;
+        list-style-type: none;
+        padding-left: 0;
+
+        li:not(:last-child) {
+          margin-right: math.div(var.$gutter-base, 2);
+        }
+
+        li a {
+          @include mix.ul-list;
+          font-size: math.div(var.$gutter-base, 2.5);
+
+          @include mix.mobile-l-styles {
+            font-size: math.div(var.$gutter-base, 1.5);
+          }
+        }
+
+        li a:hover {
+          color: var.$text-color-primary;
+          opacity: 1;
+        }
+      }
+    }
+    .title {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: var.$text-color-primary;
+
+      @include mix.tablet-styles {
+        width: 100%;
+        font-size: math.div(var.$gutter-base, 1.5);
+      }
+
+      h1 {
+        @include mix.mobile-l-styles {
+          font-size: var.$gutter-base * 2;
+          width: 100%;
+        }
+      }
+
+      p {
+        padding-bottom: 15px;
+        @include mix.mobile-l-styles {
+          font-size: var.$gutter-base;
+        }
+      }
+
+      .btn {
+        color: var.$text-color-primary;
+        background-color: var.$button-hr-color;
+        padding: math.div(var.$gutter-base, 2) var.$gutter-base;
+        border: none;
+        border-radius: math.div(var.$gutter-base, 6);
+        text-transform: uppercase;
+        font-weight: bold;
+        text-decoration: none;
+
+        @include mix.mobile-l-styles {
+          font-size: var.$gutter-base * 0.9;
+        }
+      }
+    }
+  }
+}
+
+.banner::before {
+  content: "";
+  background-image: url(../images/hero.jpg);
+  background-size: cover;
+  position: absolute;
+  filter: brightness(35%);
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.7;
+  z-index: -1;
+}

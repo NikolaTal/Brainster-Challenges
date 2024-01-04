@@ -1,0 +1,122 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+@use "sass:math";
+
+.images {
+  @extend %images;
+  text-align: center;
+
+  .wrapper {
+    @extend %wrap;
+
+    h3 {
+      @include mix.tablet-styles {
+        font-size: var.$gutter-base;
+      }
+      @include mix.mobile-l-styles {
+        font-size: var.$gutter-base * 1.5;
+      }
+    }
+
+    p {
+      width: 40%;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: math.div(var.$gutter-base, 3);
+      
+      @include mix.tablet-styles {
+        width: 80%;
+        font-size: math.div(var.$gutter-base, 1.8);
+      }
+
+      @include mix.mobile-l-styles {
+        width: 60%;
+        line-height: var.$gutter-base;
+      }
+    }
+    hr {
+      width: 8%;
+      border: 1.5px solid var.$button-hr-color;
+      margin: 20px auto 40px;
+
+      @include mix.tablet-styles {
+        width: 20%;
+      }
+
+      @include mix.mobile-l-styles {
+        width: 40%;
+      }
+
+    }
+
+    .img-row {
+      .row-1 {
+        @include mix.flex-row;
+        height: 200px;
+
+        @include mix.tablet-styles {
+          flex-direction: column;
+          height: 800px;
+          padding: 0 30px
+        }
+        .coast {
+          @include mix.flex-basis-40;
+
+          @include mix.tablet-styles {
+            flex-basis: 100%;
+          }
+          .picture {
+            @include mix.picture;
+            padding: 15px;
+          }
+        }
+        .island {
+          @include mix.flex-basis-60;
+
+          @include mix.tablet-styles {
+            flex-basis: 100%;
+          }
+
+          .picture {
+            @include mix.picture;
+            padding: 15px;
+          }
+        }
+      }
+      .row-2 {
+        @include mix.flex-row;
+        height: 200px;
+
+        @include mix.tablet-styles {
+          flex-direction: column;
+          height: 800px; 
+          padding: 0 30px
+        }
+        .balloon {
+          @include mix.flex-basis-60;
+
+          @include mix.tablet-styles {
+            flex-basis: 100%;
+          }
+
+          .picture {
+            @include mix.picture;
+            padding: 15px;
+          }
+        }
+        .mountain {
+          @include mix.flex-basis-40;
+
+          @include mix.tablet-styles {
+            flex-basis: 100%;
+          }
+
+          .picture {
+            @include mix.picture;
+            padding: 15px;
+          }
+        }
+      }
+    }
+  }
+}

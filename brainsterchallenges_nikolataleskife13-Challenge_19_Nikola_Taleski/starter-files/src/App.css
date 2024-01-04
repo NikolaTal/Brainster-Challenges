@@ -1,0 +1,96 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.navbar {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./images/raw/Girls-Listen-Music_0.jpg");
+  display: flex;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 10px solid cyan;
+  padding: 0 !important;
+  min-height: 50vh;
+}
+
+.navbar-title {
+  color: white;
+  text-transform: uppercase;
+  padding: 100px 0;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.bg-gray {
+  background-color: #d3d3d3;
+}
+
+img {
+  max-width: 100%;
+}
+
+.artist-name-on-image {
+  position: absolute;
+  transform: translate(-0%, -100%);
+  background-color: #2196f3;
+  color: white;
+  padding: 6px;
+  font-weight: bold;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.artist-list-title {
+  font-weight: bold;
+}
+
+.img-size {
+  width: 150px;
+  height: 150px;
+}
+
+.bold-span {
+  font-weight: bold;
+}

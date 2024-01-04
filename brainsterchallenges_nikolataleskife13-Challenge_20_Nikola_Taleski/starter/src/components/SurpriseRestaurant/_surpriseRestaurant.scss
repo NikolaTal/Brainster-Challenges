@@ -1,0 +1,15 @@
+@use "../../css/abstracts/mixins" as mix;
+@use "../../css/abstracts/variables" as var;
+
+.uppercase {
+  @include mix.uppercase;
+}
+
+.button-surprise {
+  border: none;
+  border-radius: 5px;
+  color: var.$text-color-primary;
+  background-color: var.$background-color-green;
+  width: 100%;
+  font-size: var.$heading-size-tiny;
+}

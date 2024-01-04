@@ -1,0 +1,6 @@
+@use "../../css/abstracts/mixins" as mix;
+@use "../../css/abstracts/variables" as var;
+
+.uppercase {
+  @include mix.uppercase;
+}

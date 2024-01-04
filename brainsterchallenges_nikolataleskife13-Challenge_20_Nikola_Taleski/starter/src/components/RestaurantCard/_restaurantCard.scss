@@ -1,0 +1,51 @@
+@use "../../css/abstracts/variables" as var;
+
+.text-decoration {
+  text-decoration: none;
+}
+
+.card-body {
+  background-color: var.$background-color-grey;
+  text-align: left !important;
+}
+
+.businessname {
+  font-weight: var.$font-weight-bold;
+}
+
+.restauranttype {
+  color: var.$text-color-secondary;
+}
+
+.card-img-top {
+  border-radius: 10px;
+  height: 180px !important;
+}
+
+.Image {
+  position: relative;
+
+  &:hover .favorite-icon .fa-heart {
+    display: block;
+  }
+
+  .favorite-icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+    .fa-heart {
+      display: none;
+      color: red;
+      width: 40px !important;
+      height: 40px !important;
+    }
+  }
+}
+
+.fa-heart {
+  position: absolute;
+  color: red;
+  width: 40px !important;
+  height: 40px !important;
+}

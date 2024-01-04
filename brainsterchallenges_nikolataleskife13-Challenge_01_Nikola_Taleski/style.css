@@ -1,0 +1,259 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    background-color: #638caa;
+}
+
+.clear {
+    clear: both;
+}
+
+/* NAVIGATION BAR AND CENTRAL IMAGE */
+
+header {
+    height: 360px;
+    position: relative;
+}
+
+.header1 img {
+    float: left;
+    width: 2%;
+    margin: 20px 150px;
+}
+
+nav {
+    padding: 20px 170px;
+    float: right;
+}   
+
+nav a {
+    float: left;
+    width: auto;
+    margin: 8px;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    cursor: grab;
+}
+
+nav a:hover{
+    color: #b4b0a0;
+    text-decoration: underline red;
+    transition: 0.4s;
+    font-size: 17px;
+}   
+
+.centralImage img{
+    height: 95%;
+    padding-top: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* MAIN PART WITH TEXTS AND IMAGES */
+
+.main1 {
+    width: 100%;
+    height: 160px;
+}
+
+.childs {
+    width: 25%;
+    height: 100%;
+    color: #000000;
+    font-size: 30px;
+    font-weight: bold;
+    float: left;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.child1 {
+    background-color: #dbdbdb;
+}
+.child2 {
+    background-color: #bcb9aa;
+}
+.child3 {
+    background-color: #9ce0d1;
+}
+.child4 {
+    background-color: #9aa7b8;
+}
+
+.id-dimmensions {
+    width: 100%;
+    height: 280px;
+}
+
+.justify {
+    text-align: justify;
+    font-size: 20px;
+    text-indent: 30px;
+}
+
+.paragraphsImg {
+    width: 50%;
+    height: 280px;
+    position: relative;
+}
+
+.paragraphs {
+    width: 50%;
+    height: 100%;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    padding: 15px;
+}
+
+.iDimg {
+    height: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}   
+/*IPAD SECTION*/
+
+.iPadChild1 {    
+    background-color: #b7ced6;
+    float: left;    
+}
+
+.iPadChild2 {
+    background-color: #9aa7b8;
+    float: right;
+}
+
+.iPadChild2 p:first-child {
+    font-weight: bold;
+}
+
+/* IPHONE SECTION */
+
+.iPhoneXChild1 {
+    background-color: #bcb9aa;
+    float: left;
+}
+
+.iPhoneXChild1 p:first-child {
+    font-weight: bold;
+}
+
+.iPhoneXChild2{
+    background-color: #b7ced6;
+    float: right;
+}
+
+/* MACBOOKAIR SECTION */
+
+.macBookAirChild1 {
+    background-color: #b7ced6;
+    float: left;
+}
+
+.macBookAirChild2 {
+    height: 92%;
+    background-color: #f09e84;
+    float: right;
+}
+
+.macBookAirChild2 p:first-child {
+    font-weight: bold;
+}
+
+/* TEAM-SALARY-EARNINGS */
+
+.teamSallaryEarnings {
+    width: 100%;
+    height: 140px;
+    text-align: center;
+}
+
+.titles {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.texts {
+    color: white;
+    padding-top: 3px;
+    padding-bottom: 20px;
+}
+
+.team-dimmensions {
+    float: left;
+    width: 33.333%;
+}
+
+.team {
+    background-color: #9aa7b8;
+    }
+    
+.sallary {
+    background-color: #bcb9aa;
+    }
+    
+.earnings {
+    background-color: #9ce0d1;
+    }
+
+/* SOCIAL MEDIA SECTION */
+
+#contact {
+    height: 245px;
+    text-align: center;
+    padding-top: 90px;
+}
+
+#contact i{
+    padding-top: 60px;
+    padding-left: 150px;
+}
+
+.color {
+    color: white;
+}
+
+.fa-brands:hover {
+    transition: 0.4s;
+}
+
+.fa-facebook-f:hover {
+    color: #0f92f3;
+}
+
+.fa-google-plus:hover {
+    color: #ce4b40;
+}
+
+.fa-twitter:hover {
+    color: #1da1f2;
+}
+
+.fa-youtube:hover {
+    color: #ff0000;
+}
+
+.fa-instagram:hover {
+    color: #ee0083;
+}
+
+.apple2019 {
+    height: 80px;
+    background-color: #514354;
+}
+
+.apple2019 p {
+    margin: auto;
+    text-align: center;
+    color: white;
+    padding: 30px;
+}
+

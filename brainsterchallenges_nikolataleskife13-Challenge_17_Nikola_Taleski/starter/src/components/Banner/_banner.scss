@@ -1,0 +1,61 @@
+@use "../../css/abstracts/variables" as var;
+
+.banner {
+  background-image: url("https://fastly.picsum.photos/id/83/2560/1920.jpg?hmac=LFdAxfpbYKs0hZr0LhHVWyqXarWGg7FtM8pIzJPBc0w");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+.title {
+  color: var.$text-color-primary;
+}
+
+.button {
+  padding: 10px;
+  border: none;
+}
+
+@media (max-width: 426px) {
+  .title {
+    margin-left: 10px;
+  }
+
+  .h1media {
+    font-size: 50px;
+    font-weight: bold;
+  }
+
+  .button {
+    width: 95%;
+    margin: 10px auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .title {
+    margin-left: 20px;
+  }
+
+  .button {
+    width: 20%;
+    margin-left: 25px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .title {
+    color: var.$text-color-primary;
+    margin-left: 150px;
+  }
+
+  .button {
+    margin-top: 10px;
+    margin-left: 150px;
+    width: 10%;
+  }
+}

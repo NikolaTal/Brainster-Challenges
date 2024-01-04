@@ -1,0 +1,214 @@
+body {
+  overflow-x: hidden;
+  background-color: #242021;
+}
+#race {
+  text-align: center;
+  background-color: #242021;
+}
+
+h1,
+h2,
+h3 {
+  color: #a2a2a2;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+input {
+  background-color: #242021;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 3px 45px;
+}
+#race-now {
+  color: white;
+  margin-right: 10px;
+  font-size: 25px;
+  padding: 5px 50px;
+}
+#start-over {
+  color: white;
+  font-size: 25px;
+  padding: 5px 50px;
+}
+#racetrack {
+  background-image: url("../starter-files/images/raceTrack.jpg");
+  background-position: center;
+  background-repeat: repeat-x;
+  background-size: contain;
+  margin-top: 25px;
+  max-height: 60vh;
+  width: 100%;
+}
+
+.car {
+  display: block;
+  position: relative;
+}
+
+#car1 {
+  position: absolute;
+  top: 70px;
+  width: 25%;
+}
+
+#car2 {
+  top: 90px;
+  width: 25%;
+}
+
+#info {
+  width: 20%;
+  color: white;
+}
+
+.color-white {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.color-red {
+  color: red;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.raceInfo {
+  /* left: 50px; */
+  font-size: 25px;
+}
+
+#finish {
+  display: none;
+}
+
+#finish {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  z-index: 9999;
+}
+
+#finish img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+#racetrack.opacity {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+#countdown {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 10px;
+  display: none;
+  z-index: 9999;
+}
+
+#countdownDiv {
+  color: white;
+  font-size: 200px;
+  text-align: center;
+}
+
+.carsLocalStorage {
+  color: #a2a2a2;
+  padding: 5px;
+  justify-content: center;
+}
+
+.borderStyle {
+  border: 3px solid white;
+}
+
+.fontSize {
+  font-size: 30px;
+}
+
+@media (max-width: 768px) {
+  #car1 {
+    position: absolute;
+    top: 90px;
+    width: 25%;
+  }
+
+  #car2 {
+    top: 50px;
+    width: 25%;
+  }
+  #race-now {
+    color: white;
+    margin-right: 10px;
+    font-size: 15px;
+    padding: 2px 25px;
+  }
+  #start-over {
+    color: white;
+    font-size: 15px;
+    padding: 2px 25px;
+  }
+
+  .mainTitle {
+    font-size: 40px !important;
+    margin-top: 10px;
+  }
+
+  .results {
+    font-size: 25px;
+    margin-bottom: 35px;
+  }
+
+  #car1Info div {
+    font-size: 13px !important;
+    padding: 0px;
+    margin-bottom: 10px;
+  }
+  #car1Info div span {
+    font-size: 12px !important;
+  }
+
+  #car2Info div {
+    font-size: 13px !important;
+    padding: 0px;
+    margin-bottom: 10px;
+  }
+  #car2Info div span {
+    font-size: 12px !important;
+  }
+  .raceInfo {
+    padding: 0px !important;
+  }
+
+  #previous-results h3 {
+    font-size: 20px !important;
+  }
+  #previous-results div {
+    font-size: 14px !important;
+    padding: 0px;
+  }
+  #previous-results span {
+    font-size: 12px !important;
+  }
+}

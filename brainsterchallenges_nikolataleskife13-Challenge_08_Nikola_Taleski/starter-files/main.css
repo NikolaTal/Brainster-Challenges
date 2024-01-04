@@ -1,0 +1,106 @@
+img {
+  display: block;
+  width: 100%;
+}
+.contact-img {
+  height: 130px;
+  width: auto;
+}
+.bg-color {
+  background-color: #333333;
+}
+.nav-link {
+  font-size: 12px;
+}
+.navbar-brand {
+  padding-left: 15px;
+}
+.nav-item.active {
+  border-left: 3px solid white;
+}
+.active a {
+  color: white;
+}
+.nav-item:active {
+  color: white;
+}
+.navbar-toggler[aria-expanded="true"] {
+  color: orange;
+}
+.carousel-item {
+  height: 450px;
+}
+.carousel-center {
+  top: 50% !important;
+  left: 50% !important;
+  right: auto !important;
+  bottom: auto !important;
+  transform: translate(-50%, -50%);
+}
+.bg-img-1 {
+  background-image: url(./Images/image1.jpg);
+  background-size: cover;
+}
+.bg-img-2 {
+  background-image: url(./Images/image2.jpg);
+  background-size: cover;
+}
+.bg-img-3 {
+  background-image: url(./Images/image3.jpg);
+  background-size: cover;
+}
+.parallax-1 {
+  top: 0;
+  left: 0;
+}
+.parallax-1 {
+  position: relative;
+  background: url(./Images/lights.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+.parallax-2 {
+  position: relative;
+  background: url(./Images/media.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  text-align: center;
+  background-color: hsla(0, 0%, 10%, 0.5);
+  background-blend-mode: saturation;
+}
+.about {
+  background-image: url(./Images/image1.jpg);
+  background-attachment: fixed;
+  padding: 200px 0;
+  background-position-y: 10px;
+}
+@media (min-width: 769px) {
+  .about {
+    background-size: cover;
+  }
+}
+.img-about {
+  height: auto;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transform: translate(0%, -30%);
+}
+.sections {
+  background-image: url(./Images/image1.jpg);
+  background-attachment: fixed;
+  padding: 200px 0;
+  background-position-y: 50px;
+}
+@media (min-width: 769px) {
+  .sections {
+    background-size: cover;
+  }
+}
+.bg-cards {
+  background-color: #f5f5f5 !important;
+}
+.accordion {
+  --bs-accordion-border-width: none;
+}

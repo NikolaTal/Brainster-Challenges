@@ -1,0 +1,16 @@
+.thStyle {
+  padding-right: 80px;
+}
+
+.myProgress {
+    background-color: gray;
+}
+
+.myBar {
+    background-color: green;
+}
+
+.paragraph {
+  font-weight: bold;
+  font-size: 25px;
+}

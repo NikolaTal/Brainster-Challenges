@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenge 12</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- List for book title and book author -->
+    <ul id="data"></ul>
+    <br />
+
+    <!-- List for status whether the book has been read or not -->
+    <ul id="status"></ul>
+    <br />
+
+    <!-- Table with info about the books -->
+    <table>
+      <thead>
+        <tr>
+          <th class="thStyle">Title</th>
+          <th class="thStyle">Author</th>
+          <th class="thStyle">Max Pages</th>
+          <th class="thStyle">On Page</th>
+          <th class="thStyle">Progress</th>
+        </tr>
+      </thead>
+      <tbody id="tBody"></tbody>
+    </table>
+
+    <br />
+    <br />
+    <!-- Form for new book -->
+    <form id="form">
+      <p class="paragraph">Add a book to the list:</p>
+
+      <input type="text" id="title" placeholder="Book Title" required />
+      <input type="text" id="author" placeholder="Book Author" required />
+      <input type="number" id="maxPage" placeholder="Book Max Pages" required />
+      <input type="number" id="onPage" placeholder="Current Page On" required />
+
+      <button id="btn">Add to List</button>
+    </form>
+    <script src="./main.js"></script>
+  </body>
+</html>

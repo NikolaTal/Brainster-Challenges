@@ -1,0 +1,12 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+@use "sass:math";
+
+.container {
+  display: flex;
+  flex-direction: row;
+
+  @include mix.tablet-styles {
+    flex-direction: column;
+  }
+}

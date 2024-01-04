@@ -1,0 +1,42 @@
+@use "../../css/abstracts/variables" as var;
+
+.navbarUl {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+
+  li button {
+    padding: 0.4em 0.75em;
+    color: #838383;
+    border: none;
+    background-color: var.$text-color-primary;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-right: 10px;
+
+    &:hover {
+      color: black;
+    }
+  }
+}
+
+.bg-color-navbar {
+  background-color: var.$background-color-base;
+}
+
+.logo {
+  width: 80px;
+  height: 60px;
+  margin: 10px 170px 10px 10px;
+}
+
+.icons {
+  border: none;
+  color: #838383;
+  background-color: var.$background-color-base;
+
+  &:hover {
+    color: black;
+  }
+}

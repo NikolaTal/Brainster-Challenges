@@ -1,0 +1,78 @@
+@use "../../css/abstracts/variables" as var;
+
+.buttonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.buttonContainer:hover button,
+.buttonContainer:hover .numberOfBikes {
+  color: var.$text-color-buttons;
+}
+
+.quantity.active {
+  background-color: var.$background-color-secondary;
+  color: var.$text-color-primary;
+}
+
+.btn-bike {
+  background-color: var.$background-color-base;
+  border: none;
+  text-transform: uppercase;
+  padding-left: 0;
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: #3d3c3b;
+
+  &:hover {
+    color: var.$text-color-buttons;
+  }
+}
+
+.btn-gender {
+  background-color: var.$background-color-base;
+  border: none;
+  padding-left: 0;
+  margin-bottom: 5px;
+  font-size: 20px;
+
+  &:hover {
+    color: var.$text-color-buttons;
+  }
+}
+
+.titles {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.activeButton {
+  color: var.$text-color-buttons;
+  background-color: var.$background-color-base;
+  border: none;
+  font-size: 20px;
+  padding-left: 0;
+  margin-bottom: 5px;
+}
+
+.filteredFont {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.bikes {
+  font-size: 55px;
+}
+
+.quantity {
+  background-color: var.$background-color-quantity;
+  color: var.$text-color-primary;
+  padding: 0 10px;
+  border-radius: 30%/50%;
+
+  &:hover {
+    background-color: var.$background-color-secondary;
+    color: var.$text-color-primary;
+  }
+}
